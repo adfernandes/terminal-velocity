@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		491D347E1B6E9F9E0061C583 /* Terminal Velocity.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 49AA13AD1B6E9C1300FE404D /* Terminal Velocity.entitlements */; };
+		491D347F1B6E9FA20061C583 /* Terminal Velocity Launcher.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 49AA13AE1B6E9D1400FE404D /* Terminal Velocity Launcher.entitlements */; };
+		49AA13771B6E9B3000FE404D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AA13761B6E9B3000FE404D /* AppDelegate.swift */; };
+		49AA13791B6E9B3000FE404D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AA13781B6E9B3000FE404D /* ViewController.swift */; };
+		49AA137B1B6E9B3000FE404D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49AA137A1B6E9B3000FE404D /* Images.xcassets */; };
+		49AA137E1B6E9B3000FE404D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49AA137C1B6E9B3000FE404D /* Main.storyboard */; };
+		49AA139A1B6E9B5A00FE404D /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49AA13991B6E9B5A00FE404D /* AppleScriptObjC.framework */; };
+		49AA139F1B6E9B5A00FE404D /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 49AA139E1B6E9B5A00FE404D /* main.mm */; };
+		49AA13A11B6E9B5A00FE404D /* TerminalVelocityLauncher.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 49AA13A01B6E9B5A00FE404D /* TerminalVelocityLauncher.applescript */; };
+		49AA13A31B6E9B5A00FE404D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49AA13A21B6E9B5A00FE404D /* Images.xcassets */; };
+		49AA13AA1B6E9BD700FE404D /* Terminal Velocity Launcher.app in Resources */ = {isa = PBXBuildFile; fileRef = 49AA13971B6E9B5A00FE404D /* Terminal Velocity Launcher.app */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49AA13AB1B6E9BD700FE404D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49AA13691B6E9B3000FE404D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49AA13961B6E9B5A00FE404D;
+			remoteInfo = "Terminal Velocity Launcher";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		491D34801B6EA1BA0061C583 /* TerminalVelocityLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TerminalVelocityLauncher.h; sourceTree = "<group>"; };
+		49AA13711B6E9B3000FE404D /* Terminal Velocity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Terminal Velocity.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49AA13751B6E9B3000FE404D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49AA13761B6E9B3000FE404D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		49AA13781B6E9B3000FE404D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		49AA137A1B6E9B3000FE404D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		49AA137D1B6E9B3000FE404D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		49AA13971B6E9B5A00FE404D /* Terminal Velocity Launcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Terminal Velocity Launcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49AA13991B6E9B5A00FE404D /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
+		49AA139D1B6E9B5A00FE404D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49AA139E1B6E9B5A00FE404D /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		49AA13A01B6E9B5A00FE404D /* TerminalVelocityLauncher.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = TerminalVelocityLauncher.applescript; sourceTree = "<group>"; };
+		49AA13A21B6E9B5A00FE404D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		49AA13AD1B6E9C1300FE404D /* Terminal Velocity.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Terminal Velocity.entitlements"; sourceTree = "<group>"; };
+		49AA13AE1B6E9D1400FE404D /* Terminal Velocity Launcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Terminal Velocity Launcher.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49AA136E1B6E9B3000FE404D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49AA13941B6E9B5A00FE404D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49AA139A1B6E9B5A00FE404D /* AppleScriptObjC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49AA13681B6E9B3000FE404D = {
+			isa = PBXGroup;
+			children = (
+				49AA13731B6E9B3000FE404D /* Terminal Velocity */,
+				49AA139B1B6E9B5A00FE404D /* Terminal Velocity Launcher */,
+				49AA13981B6E9B5A00FE404D /* Frameworks */,
+				49AA13721B6E9B3000FE404D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49AA13721B6E9B3000FE404D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49AA13711B6E9B3000FE404D /* Terminal Velocity.app */,
+				49AA13971B6E9B5A00FE404D /* Terminal Velocity Launcher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49AA13731B6E9B3000FE404D /* Terminal Velocity */ = {
+			isa = PBXGroup;
+			children = (
+				49AA13761B6E9B3000FE404D /* AppDelegate.swift */,
+				49AA13781B6E9B3000FE404D /* ViewController.swift */,
+				49AA137A1B6E9B3000FE404D /* Images.xcassets */,
+				49AA137C1B6E9B3000FE404D /* Main.storyboard */,
+				49AA13741B6E9B3000FE404D /* Supporting Files */,
+			);
+			path = "Terminal Velocity";
+			sourceTree = "<group>";
+		};
+		49AA13741B6E9B3000FE404D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				49AA13751B6E9B3000FE404D /* Info.plist */,
+				49AA13AD1B6E9C1300FE404D /* Terminal Velocity.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49AA13981B6E9B5A00FE404D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49AA13991B6E9B5A00FE404D /* AppleScriptObjC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49AA139B1B6E9B5A00FE404D /* Terminal Velocity Launcher */ = {
+			isa = PBXGroup;
+			children = (
+				49AA139E1B6E9B5A00FE404D /* main.mm */,
+				491D34801B6EA1BA0061C583 /* TerminalVelocityLauncher.h */,
+				49AA13A01B6E9B5A00FE404D /* TerminalVelocityLauncher.applescript */,
+				49AA13A21B6E9B5A00FE404D /* Images.xcassets */,
+				49AA139C1B6E9B5A00FE404D /* Supporting Files */,
+			);
+			path = "Terminal Velocity Launcher";
+			sourceTree = "<group>";
+		};
+		49AA139C1B6E9B5A00FE404D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				49AA139D1B6E9B5A00FE404D /* Info.plist */,
+				49AA13AE1B6E9D1400FE404D /* Terminal Velocity Launcher.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49AA13701B6E9B3000FE404D /* Terminal Velocity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49AA138D1B6E9B3000FE404D /* Build configuration list for PBXNativeTarget "Terminal Velocity" */;
+			buildPhases = (
+				49AA136D1B6E9B3000FE404D /* Sources */,
+				49AA136E1B6E9B3000FE404D /* Frameworks */,
+				49AA136F1B6E9B3000FE404D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49AA13AC1B6E9BD700FE404D /* PBXTargetDependency */,
+			);
+			name = "Terminal Velocity";
+			productName = "Terminal Velocity";
+			productReference = 49AA13711B6E9B3000FE404D /* Terminal Velocity.app */;
+			productType = "com.apple.product-type.application";
+		};
+		49AA13961B6E9B5A00FE404D /* Terminal Velocity Launcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49AA13A71B6E9B5A00FE404D /* Build configuration list for PBXNativeTarget "Terminal Velocity Launcher" */;
+			buildPhases = (
+				49AA13931B6E9B5A00FE404D /* Sources */,
+				49AA13941B6E9B5A00FE404D /* Frameworks */,
+				49AA13951B6E9B5A00FE404D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Terminal Velocity Launcher";
+			productName = "Terminal Velocity Launcher";
+			productReference = 49AA13971B6E9B5A00FE404D /* Terminal Velocity Launcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49AA13691B6E9B3000FE404D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Pharynks Corporation";
+				TargetAttributes = {
+					49AA13701B6E9B3000FE404D = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = Y629ETSHLM;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
+						};
+					};
+					49AA13961B6E9B5A00FE404D = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = Y629ETSHLM;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 49AA136C1B6E9B3000FE404D /* Build configuration list for PBXProject "Terminal Velocity" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49AA13681B6E9B3000FE404D;
+			productRefGroup = 49AA13721B6E9B3000FE404D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49AA13701B6E9B3000FE404D /* Terminal Velocity */,
+				49AA13961B6E9B5A00FE404D /* Terminal Velocity Launcher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49AA136F1B6E9B3000FE404D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49AA137B1B6E9B3000FE404D /* Images.xcassets in Resources */,
+				49AA137E1B6E9B3000FE404D /* Main.storyboard in Resources */,
+				49AA13AA1B6E9BD700FE404D /* Terminal Velocity Launcher.app in Resources */,
+				491D347E1B6E9F9E0061C583 /* Terminal Velocity.entitlements in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49AA13951B6E9B5A00FE404D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				491D347F1B6E9FA20061C583 /* Terminal Velocity Launcher.entitlements in Resources */,
+				49AA13A31B6E9B5A00FE404D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49AA136D1B6E9B3000FE404D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49AA13791B6E9B3000FE404D /* ViewController.swift in Sources */,
+				49AA13771B6E9B3000FE404D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49AA13931B6E9B5A00FE404D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49AA13A11B6E9B5A00FE404D /* TerminalVelocityLauncher.applescript in Sources */,
+				49AA139F1B6E9B5A00FE404D /* main.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49AA13AC1B6E9BD700FE404D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49AA13961B6E9B5A00FE404D /* Terminal Velocity Launcher */;
+			targetProxy = 49AA13AB1B6E9BD700FE404D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		49AA137C1B6E9B3000FE404D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49AA137D1B6E9B3000FE404D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49AA138B1B6E9B3000FE404D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		49AA138C1B6E9B3000FE404D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		49AA138E1B6E9B3000FE404D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Terminal Velocity/Terminal Velocity.entitlements";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Terminal Velocity/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		49AA138F1B6E9B3000FE404D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Terminal Velocity/Terminal Velocity.entitlements";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Terminal Velocity/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		49AA13A81B6E9B5A00FE404D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Terminal Velocity Launcher/Terminal Velocity Launcher.entitlements";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Terminal Velocity Launcher/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		49AA13A91B6E9B5A00FE404D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Terminal Velocity Launcher/Terminal Velocity Launcher.entitlements";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Terminal Velocity Launcher/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49AA136C1B6E9B3000FE404D /* Build configuration list for PBXProject "Terminal Velocity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49AA138B1B6E9B3000FE404D /* Debug */,
+				49AA138C1B6E9B3000FE404D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49AA138D1B6E9B3000FE404D /* Build configuration list for PBXNativeTarget "Terminal Velocity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49AA138E1B6E9B3000FE404D /* Debug */,
+				49AA138F1B6E9B3000FE404D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49AA13A71B6E9B5A00FE404D /* Build configuration list for PBXNativeTarget "Terminal Velocity Launcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49AA13A81B6E9B5A00FE404D /* Debug */,
+				49AA13A91B6E9B5A00FE404D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49AA13691B6E9B3000FE404D /* Project object */;
+}
