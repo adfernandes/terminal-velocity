@@ -17,6 +17,8 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        println("\(view.window)")
+
         // self.view.window!.center()
         // self.view.window!.level = Int(CGWindowLevelForKey(CGWindowLevelKey.StatusWindowLevelKey))
         // self.view.window!.makeKeyAndOrderFront(nil)

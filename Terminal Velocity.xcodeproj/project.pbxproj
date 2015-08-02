@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4917292F1B6EB2EF0086ADB0 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4917292E1B6EB2EF0086ADB0 /* Sparkle.framework */; };
+		491729311B6EB3500086ADB0 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4917292E1B6EB2EF0086ADB0 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		491D347E1B6E9F9E0061C583 /* Terminal Velocity.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 49AA13AD1B6E9C1300FE404D /* Terminal Velocity.entitlements */; };
 		491D347F1B6E9FA20061C583 /* Terminal Velocity Launcher.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 49AA13AE1B6E9D1400FE404D /* Terminal Velocity Launcher.entitlements */; };
 		49AA13771B6E9B3000FE404D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AA13761B6E9B3000FE404D /* AppDelegate.swift */; };
@@ -30,7 +32,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		491729301B6EB3360086ADB0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				491729311B6EB3500086ADB0 /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		4917292E1B6EB2EF0086ADB0 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Sparkle/Binary/Sparkle.framework; sourceTree = "<group>"; };
 		491D34801B6EA1BA0061C583 /* TerminalVelocityLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TerminalVelocityLauncher.h; sourceTree = "<group>"; };
 		49AA13711B6E9B3000FE404D /* Terminal Velocity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Terminal Velocity.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49AA13751B6E9B3000FE404D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4917292F1B6EB2EF0086ADB0 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +127,7 @@
 		49AA13981B6E9B5A00FE404D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4917292E1B6EB2EF0086ADB0 /* Sparkle.framework */,
 				49AA13991B6E9B5A00FE404D /* AppleScriptObjC.framework */,
 			);
 			name = Frameworks;
@@ -146,6 +164,7 @@
 				49AA136D1B6E9B3000FE404D /* Sources */,
 				49AA136E1B6E9B3000FE404D /* Frameworks */,
 				49AA136F1B6E9B3000FE404D /* Resources */,
+				491729301B6EB3360086ADB0 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -373,8 +392,13 @@
 				CODE_SIGN_ENTITLEMENTS = "Terminal Velocity/Terminal Velocity.entitlements";
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Sparkle/Binary",
+				);
 				INFOPLIST_FILE = "Terminal Velocity/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_LDFLAGS = "-Wl,-rpath,@loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -386,8 +410,13 @@
 				CODE_SIGN_ENTITLEMENTS = "Terminal Velocity/Terminal Velocity.entitlements";
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Sparkle/Binary",
+				);
 				INFOPLIST_FILE = "Terminal Velocity/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_LDFLAGS = "-Wl,-rpath,@loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
