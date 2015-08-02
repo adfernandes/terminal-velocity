@@ -1,26 +1,21 @@
-//
-//  AppDelegate.swift
-//  Terminal Velocity
-//
 //  Created by Andrew Fernandes on 2015/08/02.
 //  Copyright (c) 2015 Pharynks Corporation. All rights reserved.
-//
 
 import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-
-
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        // Insert code here to initialize your application
+        // this space is intentionally left blank
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
-        // Insert code here to tear down your application
+        // this space is intentionally left blank
     }
 
+    func applicationShouldTerminateAfterLastWindowClosed(sender: NSApplication) -> Bool {
+        return true
+    }
 
 }
-
