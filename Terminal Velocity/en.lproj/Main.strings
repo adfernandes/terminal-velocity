@@ -1,0 +1,54 @@
+
+/* Class = "NSMenuItem"; title = "Terminal Velocity"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "Terminal Velocity";
+
+/* Class = "NSTextFieldCell"; title = "Terminal Application to Use"; ObjectID = "25O-eo-wz9"; */
+"25O-eo-wz9.title" = "Terminal Application to Use";
+
+/* Class = "NSMenuItem"; title = "Quit Terminal Velocity"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Quit Terminal Velocity";
+
+/* Class = "NSMenuItem"; title = "Edit"; ObjectID = "5QF-Oa-p0T"; */
+"5QF-Oa-p0T.title" = "Edit";
+
+/* Class = "NSMenuItem"; title = "About Terminal Velocity"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "About Terminal Velocity";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Main Menu";
+
+/* Class = "NSMenuItem"; title = "View"; ObjectID = "H8h-7b-M4v"; */
+"H8h-7b-M4v.title" = "View";
+
+/* Class = "NSWindow"; title = "Window"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "Window";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
+"Kd2-mp-pUS.title" = "Show All";
+
+/* Class = "NSMenuItem"; title = "Hide Terminal Velocity"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "Hide Terminal Velocity";
+
+/* Class = "NSButtonCell"; title = "Radio"; ObjectID = "PHN-OY-GR2"; */
+"PHN-OY-GR2.title" = "Radio";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
+"Vdr-fp-XzO.title" = "Hide Others";
+
+/* Class = "NSMenuItem"; title = "Check for Updates..."; ObjectID = "Wqa-gX-3Dd"; */
+"Wqa-gX-3Dd.title" = "Check for Updates...";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR"; */
+"aUF-d1-5bR.title" = "Window";
+
+/* Class = "NSButtonCell"; title = "Terminal"; ObjectID = "gGe-Xz-MUm"; */
+"gGe-Xz-MUm.title" = "Terminal";
+
+/* Class = "NSButtonCell"; title = "iTerm / iTerm2"; ObjectID = "h0q-vU-fcc"; */
+"h0q-vU-fcc.title" = "iTerm / iTerm2";
+
+/* Class = "NSMenuItem"; title = "Format"; ObjectID = "jxT-CU-nIS"; */
+"jxT-CU-nIS.title" = "Format";
+
+/* Class = "NSMenu"; title = "Terminal Velocity"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "Terminal Velocity";
