@@ -17,6 +17,14 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // self.view.window!.center()
+        // self.view.window!.level = Int(CGWindowLevelForKey(CGWindowLevelKey.StatusWindowLevelKey))
+        // self.view.window!.makeKeyAndOrderFront(nil)
+
+        //CGFloat xPos = NSWidth([[window screen] frame])/2 - NSWidth([window frame])/2;
+        //CGFloat yPos = NSHeight([[window screen] frame])/2 - NSHeight([window frame])/2;
+        //[window setFrame:NSMakeRect(xPos, yPos, NSWidth([window frame]), NSHeight([window frame])) display:YES];
+
         // Start here...
 
     }
