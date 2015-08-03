@@ -14,11 +14,11 @@ class ViewController: NSViewController {
     @IBOutlet weak var radio: NSMatrix!
     @IBOutlet weak var useTabs: NSButton!
 
-    let ApplicationForButtonTag = [ 0: "Terminal", 1: "iTerm2", 2: "xterm" ]
-    let ButtonTagForApplication = [ "Terminal": 0, "iTerm2": 1, "xterm": 2 ]
-
     let ApplicationPreferenceKey = "Application"
     let UseTabsPreferenceKey     = "PreferTabs"
+
+    let ApplicationForButtonTag = [ 0: "Terminal", 1: "iTerm2", 2: "xterm" ]
+    let ButtonTagForApplication = [ "Terminal": 0, "iTerm2": 1, "xterm": 2 ]
 
     let defaults = NSUserDefaults(suiteName: "Y629ETSHLM.com.pharynks.terminalvelocity")!
     let instructPath = NSBundle.mainBundle().pathForResource("Installation", ofType: "html")!

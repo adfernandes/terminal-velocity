@@ -11,7 +11,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let window: NSWindow = NSApplication.sharedApplication().windows.first! as! NSWindow
 
         window.center()
-        window.level = Int(CGWindowLevelForKey(Int32(kCGNormalWindowLevelKey)))
+        window.level = Int(CGWindowLevelForKey(Int32(kCGNormalWindowLevelKey))) // or kCGStatusWindowLevelKey, but this hides the 'about' dialog
         window.makeKeyAndOrderFront(nil)
 
     }

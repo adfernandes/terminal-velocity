@@ -63,9 +63,14 @@ script TerminalVelocityLauncher
 
     -- handler
 
-    on launchTerminalTabsFor:(directories)
+    on launchTerminalTabsFor:(paths)
 
         set theDelay to 0.5
+
+        set directories to {}
+        repeat with path in paths
+            copy (the quoted form of (the path as string)) to the end of directories
+        end repeat
 
         tell application "Terminal"
 
@@ -73,7 +78,7 @@ script TerminalVelocityLauncher
 
             if the (count of directories) > 0 then
 
-                do script "cd " & (the quoted form of item 1 of directories) & "; clear; pwd"
+                do script "cd " & (item 1 of directories) & "; clear; pwd"
                 delay theDelay
 
                 set theWindow to the front window
@@ -83,7 +88,7 @@ script TerminalVelocityLauncher
                     tell application "System Events" to tell process "Terminal" to keystroke "t" using command down
                     delay theDelay
 
-                    do script "cd " & (the quoted form of item i of directories) & "; clear; pwd" in (tab i of theWindow)
+                    do script "cd " & (item i of directories) & "; clear; pwd" in (tab i of theWindow)
                     delay theDelay
 
                 end repeat
@@ -118,7 +123,12 @@ script TerminalVelocityLauncher
 
     -- handler
 
-    on launchITerm2TabsFor:(directories)
+    on launchITerm2TabsFor:(paths)
+
+        set directories to {}
+        repeat with path in paths
+            copy (the quoted form of (the path as string)) to the end of directories
+        end repeat
 
         tell application "iTerm"
 
@@ -129,14 +139,14 @@ script TerminalVelocityLauncher
                 set theWindow to (create window with default profile)
 
                 tell the current session of theWindow
-                    write text "cd " & (the quoted form of item 1 of directories) & "; clear; pwd"
+                    write text "cd " & (item 1 of directories) & "; clear; pwd"
                 end tell
 
                 repeat with i from 2 to the count of directories
                     tell theWindow
                         set theTab to (create tab with default profile)
                         tell theTab's session
-                            write text "cd " & (the quoted form of item i of directories) & "; clear; pwd"
+                            write text "cd " & (item i of directories) & "; clear; pwd"
                         end tell
                     end tell
                 end repeat

@@ -13,6 +13,7 @@
 		491D347F1B6E9FA20061C583 /* Terminal Velocity Launcher.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 49AA13AE1B6E9D1400FE404D /* Terminal Velocity Launcher.entitlements */; };
 		49483DCC1B6FF81000791ECF /* Installation.html in Resources */ = {isa = PBXBuildFile; fileRef = 49483DCA1B6FF81000791ECF /* Installation.html */; };
 		49483DCF1B6FF81F00791ECF /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 49483DCD1B6FF81F00791ECF /* Images */; };
+		49483DD11B700A3500791ECF /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49483DD01B700A3500791ECF /* AppKit.framework */; };
 		49AA13771B6E9B3000FE404D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AA13761B6E9B3000FE404D /* AppDelegate.swift */; };
 		49AA13791B6E9B3000FE404D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AA13781B6E9B3000FE404D /* ViewController.swift */; };
 		49AA137B1B6E9B3000FE404D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49AA137A1B6E9B3000FE404D /* Images.xcassets */; };
@@ -53,6 +54,7 @@
 		49483DC81B6FCA8F00791ECF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		49483DCB1B6FF81000791ECF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = en.lproj/Installation.html; sourceTree = "<group>"; };
 		49483DCE1B6FF81F00791ECF /* Base */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Base; path = Base.lproj/Images; sourceTree = "<group>"; };
+		49483DD01B700A3500791ECF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		49AA13711B6E9B3000FE404D /* Terminal Velocity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Terminal Velocity.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49AA13751B6E9B3000FE404D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49AA13761B6E9B3000FE404D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49483DD11B700A3500791ECF /* AppKit.framework in Frameworks */,
 				49AA139A1B6E9B5A00FE404D /* AppleScriptObjC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,6 +145,7 @@
 		49AA13981B6E9B5A00FE404D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				49483DD01B700A3500791ECF /* AppKit.framework */,
 				4917292E1B6EB2EF0086ADB0 /* Sparkle.framework */,
 				49AA13991B6E9B5A00FE404D /* AppleScriptObjC.framework */,
 			);
@@ -180,6 +184,7 @@
 				49AA136E1B6E9B3000FE404D /* Frameworks */,
 				49AA136F1B6E9B3000FE404D /* Resources */,
 				491729301B6EB3360086ADB0 /* CopyFiles */,
+				49483DD21B7019B800791ECF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -198,6 +203,7 @@
 				49AA13931B6E9B5A00FE404D /* Sources */,
 				49AA13941B6E9B5A00FE404D /* Frameworks */,
 				49AA13951B6E9B5A00FE404D /* Resources */,
+				49483DD31B7019E600791ECF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -280,6 +286,35 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		49483DD21B7019B800791ECF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "# Set the build number to the current git commit count.\n# If we're using the Dev scheme, then we'll suffix the build\n# number with the current branch name, to make collisions\n# far less likely across feature branches.\n#\n# Based on: http://w3facility.info/question/how-do-i-force-xcode-to-rebuild-the-info-plist-file-in-my-project-every-time-i-build-the-project/\n#\ngit=`sh /etc/profile; which git`\nappBuild=`\"$git\" rev-list --all | wc -l`\nif [ $CONFIGURATION = \"Debug\" ]; then\n    branchName=`\"$git\" rev-parse --abbrev-ref HEAD`\n    /usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild-$branchName\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\nelse\n    /usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\nfi\necho \"Updated ${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"";
+		};
+		49483DD31B7019E600791ECF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "# Set the build number to the current git commit count.\n# If we're using the Dev scheme, then we'll suffix the build\n# number with the current branch name, to make collisions\n# far less likely across feature branches.\n#\n# Based on: http://w3facility.info/question/how-do-i-force-xcode-to-rebuild-the-info-plist-file-in-my-project-every-time-i-build-the-project/\n#\ngit=`sh /etc/profile; which git`\nappBuild=`\"$git\" rev-list --all | wc -l`\nif [ $CONFIGURATION = \"Debug\" ]; then\nbranchName=`\"$git\" rev-parse --abbrev-ref HEAD`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild-$branchName\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\nelse\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\nfi\necho \"Updated ${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		49AA136D1B6E9B3000FE404D /* Sources */ = {

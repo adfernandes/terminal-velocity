@@ -3,6 +3,7 @@
 
 #import <Foundation/Foundation.h>
 #import <AppleScriptObjC/AppleScriptObjC.h>
+#import <AppKit/AppKit.h>
 
 #import "TerminalVelocityLauncher.h"
 
@@ -20,15 +21,46 @@ using namespace std;
 
 int main(int argc, const char * argv[]) {
 
+    // Load the user preferences, if any.
+
     NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName: @"Y629ETSHLM.com.pharynks.terminalvelocity"];
     [defaults synchronize];
 
-    // let ApplicationForButtonTag = [ 0: "Terminal", 1: "iTerm2", 2: "xterm" ]
-    // let ButtonTagForApplication = [ "Terminal": 0, "iTerm2": 1, "xterm": 2 ]
+    NSString * const ApplicationPreferenceKey = @"Application";
+    NSString * const UseTabsPreferenceKey     = @"PreferTabs";
 
-    // let ApplicationPreferenceKey = "Application"
-    // let UseTabsPreferenceKey     = "PreferTabs"
+    typedef NS_ENUM(NSInteger, Application) {
+        ApplicationTerminal = 0,
+        ApplicationITerm2   = 1,
+        ApplicationXTerm    = 2,
+    };
 
+    NSDictionary * const EnumForApplication = @{
+        @"Terminal": [NSNumber numberWithInt: ApplicationTerminal],
+        @"iTerm2":   [NSNumber numberWithInt: ApplicationITerm2]  ,
+        @"xterm":    [NSNumber numberWithInt: ApplicationXTerm]  };
+
+    NSArray * const keys = [[defaults dictionaryRepresentation] allKeys];
+
+    Application application = ApplicationTerminal;
+    if ([keys containsObject: ApplicationPreferenceKey]) {
+        NSString *appString = [defaults stringForKey: ApplicationPreferenceKey];
+        if ( appString != nil ) {
+            NSNumber *appNumber = EnumForApplication[appString];
+            if ( appNumber == nil ) {
+                application = ApplicationTerminal;
+            } else {
+                application = Application([appNumber integerValue]);
+            }
+        }
+    }
+
+    BOOL UseTabs = YES;
+    if ([keys containsObject: UseTabsPreferenceKey]) {
+        UseTabs = [defaults boolForKey: UseTabsPreferenceKey];
+    }
+
+    // Initialize the scripting engine and get the current selection, if any.
 
     [[NSBundle mainBundle] loadAppleScriptObjectiveCScripts];
 
@@ -97,31 +129,39 @@ int main(int argc, const char * argv[]) {
 
     NSMutableArray *paths = [[NSMutableArray alloc] init];
     for (auto directory : directories) {
-        [paths addObject:[NSString stringWithUTF8String: directory.c_str()]];
+        [paths addObject: [NSString stringWithUTF8String: directory.c_str()]];
     }
 
-    // START HERE
+    // Perform the requested launch(es).
 
-    // xterm -e "cd '/Applications' && pwd && bash -l"
-    //
-    // NSTask *task = [[NSTask alloc] init];
-    // task.launchPath = @"/usr/bin/grep";
-    // task.arguments = @[@"foo", @"bar.txt"];
-    // [task launch];
-    //
-    // Or use:
-    //
-    // let task = NSTask.launchedTaskWithLaunchPath(_ path: String, arguments arguments: [NSString]) -> NSTask
-    // task.launch()
-    //
-    // The strings in arguments do not undergo shell expansion, so you do not need to do special quoting, and shell variables, such as $PWD, are not resolved.
-    //
-    // BETTER: Use the 'currentDirectoryPath' property prior to launch, rather than using the 'cd' command! Then 'xterm -e "pwd && bash -l"'
+    int returnValue = 0;
 
-    [script launchTerminalWindowsFor: paths];
-    [script launchITerm2WindowsFor: paths];
-    
+    if ( application == ApplicationTerminal ) {
+        if ( ! UseTabs ) {
+            [script launchTerminalWindowsFor: paths];
+        } else {
+            [script launchTerminalTabsFor: paths];
+        }
+    } else if ( application == ApplicationITerm2 ) {
+        if ( ! UseTabs ) {
+            [script launchITerm2WindowsFor: paths];
+        } else {
+            [script launchITerm2TabsFor: paths];
+        }
+    } else if ( application == ApplicationXTerm ) {
+        for (auto directory : directories) {
+            NSTask *task = [[NSTask alloc] init];
+            task.currentDirectoryPath = [NSString stringWithUTF8String: directory.c_str()];
+            task.launchPath = @"/bin/bash";
+            task.arguments = @[ @"-l", @"-c", @"xterm -title 'Terminal Velocity' -e 'clear && pwd && bash -l'" ];
+            [task launch];
+        }
+    } else {
+        NSBeep();
+        returnValue = 1;
+    }
+
     // Done.
     
-    return 0;
+    return returnValue;
 }
