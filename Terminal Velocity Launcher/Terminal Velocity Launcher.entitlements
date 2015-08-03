@@ -4,7 +4,7 @@
 <dict>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.Y629ETSHLM.com.pharynks.terminalvelocity</string>
+		<string>Y629ETSHLM.com.pharynks.terminalvelocity</string>
 	</array>
 </dict>
 </plist>

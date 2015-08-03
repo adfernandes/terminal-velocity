@@ -14,16 +14,11 @@ class ViewController: NSViewController {
     @IBOutlet weak var radio: NSMatrix!
     @IBOutlet weak var useTabs: NSButton!
 
-    enum Application : Int {
-        case Terminal = 0
-        case ITerm = 1
-        case XTerm = 2
-    }
+    let ApplicationForButtonTag = [ 0: "Terminal", 1: "iTerm2", 2: "xterm" ]
+    let ButtonTagForApplication = [ "Terminal": 0, "iTerm2": 1, "xterm": 2 ]
 
-    enum Defaults : String {
-        case Application = "Application"
-        case PreferTabs  = "PreferTabs"
-    }
+    let ApplicationPreferenceKey = "Application"
+    let UseTabsPreferenceKey     = "PreferTabs"
 
     let defaults = NSUserDefaults(suiteName: "Y629ETSHLM.com.pharynks.terminalvelocity")!
     let launcherPath = NSBundle.mainBundle().pathForResource("Terminal Velocity Launcher", ofType: "app")!
@@ -32,25 +27,36 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let dict = defaults.dictionaryRepresentation() as! [String:AnyObject]
+        defaults.synchronize()
 
-        if dict[Defaults.Application.rawValue] == nil {
-            defaults.setInteger(Application.Terminal.rawValue, forKey: Defaults.Application.rawValue)
+        let prefs = defaults.dictionaryRepresentation() as! [String:AnyObject]
+
+        if prefs[ApplicationPreferenceKey] == nil {
+            defaults.setObject(ApplicationForButtonTag[0]! as NSString, forKey: ApplicationPreferenceKey)
         }
 
-        if dict[Defaults.PreferTabs.rawValue] == nil {
-            defaults.setBool(true, forKey: Defaults.PreferTabs.rawValue)
+        if prefs[UseTabsPreferenceKey] == nil {
+            defaults.setBool(true, forKey: UseTabsPreferenceKey)
         }
 
-        var application = Application(rawValue: defaults.integerForKey(Defaults.Application.rawValue))
+        defaults.synchronize()
 
-        if application == nil {
-            application = Application.Terminal
-            defaults.setInteger(application!.rawValue, forKey: Defaults.Application.rawValue)
+        var application = defaults.stringForKey(ApplicationPreferenceKey)
+
+        if (application == nil || ButtonTagForApplication[application!] == nil) {
+            application = ApplicationForButtonTag[0]
+            defaults.setObject(application! as NSString, forKey: ApplicationPreferenceKey)
         }
 
-        radio.selectCellWithTag(application!.rawValue)
-        useTabs.state = Int(defaults.boolForKey(Defaults.PreferTabs.rawValue))
+        defaults.synchronize()
+
+        let tag = ButtonTagForApplication[application!]!
+        let tab = defaults.boolForKey(UseTabsPreferenceKey)
+
+        radio.selectCellWithTag(tag)
+        useTabs.state = Int(tab)
+
+        useTabs.enabled = (ApplicationForButtonTag[tag] != "xterm")
 
     }
 
@@ -66,11 +72,14 @@ class ViewController: NSViewController {
             return
         }
 
-        let buttonCell = radio.selectedCell() as! NSButtonCell
-        let tag = Application(rawValue: buttonCell.tag)!
-        useTabs.enabled = (tag != .XTerm)
+        let tag = (radio.selectedCell() as! NSButtonCell).tag
 
-        println("preference: \(tag.rawValue)") // TODO - also, add the 'xterm' option
+        defaults.setObject(ApplicationForButtonTag[tag]! as NSString, forKey: ApplicationPreferenceKey)
+        defaults.synchronize()
+
+        useTabs.enabled = (ApplicationForButtonTag[tag] != "xterm")
+
+        println("preference: \(tag)")
 
         // xterm -e "cd '/Applications' && pwd && bash -l"
         //
@@ -96,7 +105,11 @@ class ViewController: NSViewController {
             return
         }
 
+        defaults.setBool(Bool(useTabs.state), forKey: UseTabsPreferenceKey)
+        defaults.synchronize()
+
         println("useTabs: \(useTabs.state)") // TODO
+
 
     }
 
