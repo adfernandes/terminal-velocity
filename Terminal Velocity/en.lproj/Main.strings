@@ -20,8 +20,8 @@
 /* Class = "NSMenuItem"; title = "View"; ObjectID = "H8h-7b-M4v"; */
 "H8h-7b-M4v.title" = "View";
 
-/* Class = "NSWindow"; title = "Window"; ObjectID = "IQv-IB-iLA"; */
-"IQv-IB-iLA.title" = "Window";
+/* Class = "NSWindow"; title = "Terminal Velocity"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "Terminal Velocity";
 
 /* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
 "Kd2-mp-pUS.title" = "Show All";
@@ -38,17 +38,29 @@
 /* Class = "NSMenuItem"; title = "Check for Updates..."; ObjectID = "Wqa-gX-3Dd"; */
 "Wqa-gX-3Dd.title" = "Check for Updates...";
 
+/* Class = "NSButtonCell"; title = "Install the Finder Toolbar Launcher"; ObjectID = "YbI-UD-9Ba"; */
+"YbI-UD-9Ba.title" = "Install the Finder Toolbar Launcher";
+
 /* Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR"; */
 "aUF-d1-5bR.title" = "Window";
+
+/* Class = "NSTextFieldCell"; title = "does not support tabs"; ObjectID = "bEd-l2-SKI"; */
+"bEd-l2-SKI.title" = "does not support tabs";
 
 /* Class = "NSButtonCell"; title = "Terminal"; ObjectID = "gGe-Xz-MUm"; */
 "gGe-Xz-MUm.title" = "Terminal";
 
-/* Class = "NSButtonCell"; title = "iTerm / iTerm2"; ObjectID = "h0q-vU-fcc"; */
-"h0q-vU-fcc.title" = "iTerm / iTerm2";
+/* Class = "NSButtonCell"; title = "xterm"; ObjectID = "gdU-7L-qQv"; */
+"gdU-7L-qQv.title" = "xterm";
+
+/* Class = "NSButtonCell"; title = "iTerm2"; ObjectID = "h0q-vU-fcc"; */
+"h0q-vU-fcc.title" = "iTerm2";
 
 /* Class = "NSMenuItem"; title = "Format"; ObjectID = "jxT-CU-nIS"; */
 "jxT-CU-nIS.title" = "Format";
+
+/* Class = "NSButtonCell"; title = "Launch Groups in Tabs"; ObjectID = "nVr-Y2-IbJ"; */
+"nVr-Y2-IbJ.title" = "Launch Groups in Tabs";
 
 /* Class = "NSMenu"; title = "Terminal Velocity"; ObjectID = "uQy-DD-JDr"; */
 "uQy-DD-JDr.title" = "Terminal Velocity";

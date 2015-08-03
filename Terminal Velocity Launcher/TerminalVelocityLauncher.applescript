@@ -43,7 +43,7 @@ script TerminalVelocityLauncher
 
     -- handler
 
-    on launchTerminalFor:(directories)
+    on launchTerminalWindowsFor:(directories)
 
         tell application "Terminal"
 
@@ -63,7 +63,40 @@ script TerminalVelocityLauncher
 
     -- handler
 
-    on launchITermFor:(directories)
+    on launchTerminalTabsFor:(directories)
+
+        set theDelay to 0.5
+
+        tell application "Terminal"
+
+            activate
+
+            if the (count of directories) > 0 then
+
+                do script "cd " & (the quoted form of item 1 of directories) & "; clear; pwd"
+                delay theDelay
+
+                set theWindow to the front window
+
+                repeat with i from 2 to the count of directories
+
+                    tell application "System Events" to tell process "Terminal" to keystroke "t" using command down
+                    delay theDelay
+
+                    do script "cd " & (the quoted form of item i of directories) & "; clear; pwd" in (tab i of theWindow)
+                    delay theDelay
+
+                end repeat
+
+            end if
+
+        end tell
+
+    end launchTerminalTabsFor
+
+    -- handler
+
+    on launchITermWindowsFor:(directories)
 
         tell application "iTerm"
 
@@ -82,6 +115,37 @@ script TerminalVelocityLauncher
         end tell
         
     end launchITermFor
+
+    -- handler
+
+    on launchITermTabsFor:(directories)
+
+        tell application "iTerm"
+
+            activate
+
+            if the (count of directories) > 0 then
+
+                set theWindow to (create window with default profile)
+
+                tell the current session of theWindow
+                    write text "cd " & (the quoted form of item 1 of directories) & "; clear; pwd"
+                end tell
+
+                repeat with i from 2 to the count of directories
+                    tell theWindow
+                        set theTab to (create tab with default profile)
+                        tell theTab's session
+                            write text "cd " & (the quoted form of item i of directories) & "; clear; pwd"
+                        end tell
+                    end tell
+                end repeat
+
+            end if
+
+        end tell
+
+    end launchITermTabsFor
 
     --
 

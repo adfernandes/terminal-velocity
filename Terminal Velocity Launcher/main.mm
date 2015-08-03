@@ -92,8 +92,8 @@ int main(int argc, const char * argv[]) {
         [paths addObject:[NSString stringWithUTF8String: directory.c_str()]];
     }
 
-    [script launchITermFor: paths];
-    [script launchTerminalFor: paths];
+    [script launchTerminalWindowsFor: paths];
+    [script launchITermWindowsFor: paths];
     
     // Done.
     

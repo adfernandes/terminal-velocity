@@ -4,9 +4,12 @@
 
 @interface TerminalVelocityLauncher : NSObject
 
--(NSArray *)getFinderSelections; // NSArray<NSString *> *
+-(NSArray *)getFinderSelections; // NSArray<NSString*>*
 
--(void)launchTerminalFor:(NSArray *)directories; // NSArray<NSString *> *
--(void)launchITermFor:(NSArray *)directories;    // NSArray<NSString *> *
+-(void)launchTerminalWindowsFor:(NSArray *)directories; // NSArray<NSString*>*
+-(void)launchTerminalTabsFor:(NSArray *)directories; // NSArray<NSString*>*
+
+-(void)launchITermWindowsFor:(NSArray *)directories; // NSArray<NSString*>*
+-(void)launchITermTabsFor:(NSArray *)directories;    // NSArray<NSString*>*
 
 @end

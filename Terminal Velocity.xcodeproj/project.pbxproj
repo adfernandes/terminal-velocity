@@ -47,8 +47,8 @@
 
 /* Begin PBXFileReference section */
 		4917292E1B6EB2EF0086ADB0 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Sparkle/Binary/Sparkle.framework; sourceTree = "<group>"; };
-		491729331B6EBB780086ADB0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		491D34801B6EA1BA0061C583 /* TerminalVelocityLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TerminalVelocityLauncher.h; sourceTree = "<group>"; };
+		49483DC81B6FCA8F00791ECF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		49AA13711B6E9B3000FE404D /* Terminal Velocity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Terminal Velocity.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49AA13751B6E9B3000FE404D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49AA13761B6E9B3000FE404D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -299,7 +299,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				49AA137D1B6E9B3000FE404D /* Base */,
-				491729331B6EBB780086ADB0 /* en */,
+				49483DC81B6FCA8F00791ECF /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
