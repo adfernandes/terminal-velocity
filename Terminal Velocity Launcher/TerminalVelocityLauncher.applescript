@@ -59,7 +59,7 @@ script TerminalVelocityLauncher
 
         end tell
 
-    end launchTerminalFor
+    end launchTerminalWindowsFor
 
     -- handler
 
@@ -96,7 +96,7 @@ script TerminalVelocityLauncher
 
     -- handler
 
-    on launchITermWindowsFor:(directories)
+    on launchITerm2WindowsFor:(directories)
 
         tell application "iTerm"
 
@@ -114,11 +114,11 @@ script TerminalVelocityLauncher
             
         end tell
         
-    end launchITermFor
+    end launchITerm2WindowsFor
 
     -- handler
 
-    on launchITermTabsFor:(directories)
+    on launchITerm2TabsFor:(directories)
 
         tell application "iTerm"
 
@@ -145,7 +145,7 @@ script TerminalVelocityLauncher
 
         end tell
 
-    end launchITermTabsFor
+    end launchITerm2TabsFor
 
     --
 

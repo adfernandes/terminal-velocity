@@ -21,6 +21,14 @@ using namespace std;
 int main(int argc, const char * argv[]) {
 
     NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName: @"Y629ETSHLM.com.pharynks.terminalvelocity"];
+    [defaults synchronize];
+
+    // let ApplicationForButtonTag = [ 0: "Terminal", 1: "iTerm2", 2: "xterm" ]
+    // let ButtonTagForApplication = [ "Terminal": 0, "iTerm2": 1, "xterm": 2 ]
+
+    // let ApplicationPreferenceKey = "Application"
+    // let UseTabsPreferenceKey     = "PreferTabs"
+
 
     [[NSBundle mainBundle] loadAppleScriptObjectiveCScripts];
 
@@ -92,8 +100,26 @@ int main(int argc, const char * argv[]) {
         [paths addObject:[NSString stringWithUTF8String: directory.c_str()]];
     }
 
+    // START HERE
+
+    // xterm -e "cd '/Applications' && pwd && bash -l"
+    //
+    // NSTask *task = [[NSTask alloc] init];
+    // task.launchPath = @"/usr/bin/grep";
+    // task.arguments = @[@"foo", @"bar.txt"];
+    // [task launch];
+    //
+    // Or use:
+    //
+    // let task = NSTask.launchedTaskWithLaunchPath(_ path: String, arguments arguments: [NSString]) -> NSTask
+    // task.launch()
+    //
+    // The strings in arguments do not undergo shell expansion, so you do not need to do special quoting, and shell variables, such as $PWD, are not resolved.
+    //
+    // BETTER: Use the 'currentDirectoryPath' property prior to launch, rather than using the 'cd' command! Then 'xterm -e "pwd && bash -l"'
+
     [script launchTerminalWindowsFor: paths];
-    [script launchITermWindowsFor: paths];
+    [script launchITerm2WindowsFor: paths];
     
     // Done.
     

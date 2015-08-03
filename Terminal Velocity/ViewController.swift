@@ -21,6 +21,7 @@ class ViewController: NSViewController {
     let UseTabsPreferenceKey     = "PreferTabs"
 
     let defaults = NSUserDefaults(suiteName: "Y629ETSHLM.com.pharynks.terminalvelocity")!
+    let instructPath = NSBundle.mainBundle().pathForResource("Installation", ofType: "html")!
     let launcherPath = NSBundle.mainBundle().pathForResource("Terminal Velocity Launcher", ofType: "app")!
     let resourcePath = NSBundle.mainBundle().resourcePath!
 
@@ -62,7 +63,16 @@ class ViewController: NSViewController {
 
     @IBAction func install(sender: NSButton) {
 
-        println("install") // TODO
+        let workspace = NSWorkspace.sharedWorkspace()
+
+        workspace.openFile(instructPath)
+
+        let when = dispatch_time(DISPATCH_TIME_NOW, Int64(3 * NSEC_PER_SEC))
+        dispatch_after(when, dispatch_get_main_queue()) {
+
+            workspace.selectFile(launcherPath, inFileViewerRootedAtPath: resourcePath)
+
+        }
 
     }
 
@@ -79,24 +89,6 @@ class ViewController: NSViewController {
 
         useTabs.enabled = (ApplicationForButtonTag[tag] != "xterm")
 
-        println("preference: \(tag)")
-
-        // xterm -e "cd '/Applications' && pwd && bash -l"
-        //
-        // NSTask *task = [[NSTask alloc] init];
-        // task.launchPath = @"/usr/bin/grep";
-        // task.arguments = @[@"foo", @"bar.txt"];
-        // [task launch];
-        //
-        // Or use:
-        //
-        // let task = NSTask.launchedTaskWithLaunchPath(_ path: String, arguments arguments: [NSString]) -> NSTask
-        // task.launch()
-        //
-        // The strings in arguments do not undergo shell expansion, so you do not need to do special quoting, and shell variables, such as $PWD, are not resolved.
-        //
-        // BETTER: Use the 'currentDirectoryPath' property prior to launch, rather than using the 'cd' command! Then 'xterm -e "pwd && bash -l"'
-
     }
 
     @IBAction func preferTabs(sender: NSButton) {
@@ -107,9 +99,6 @@ class ViewController: NSViewController {
 
         defaults.setBool(Bool(useTabs.state), forKey: UseTabsPreferenceKey)
         defaults.synchronize()
-
-        println("useTabs: \(useTabs.state)") // TODO
-
 
     }
 

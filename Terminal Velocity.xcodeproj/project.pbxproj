@@ -11,6 +11,8 @@
 		491729311B6EB3500086ADB0 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4917292E1B6EB2EF0086ADB0 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		491D347E1B6E9F9E0061C583 /* Terminal Velocity.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 49AA13AD1B6E9C1300FE404D /* Terminal Velocity.entitlements */; };
 		491D347F1B6E9FA20061C583 /* Terminal Velocity Launcher.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 49AA13AE1B6E9D1400FE404D /* Terminal Velocity Launcher.entitlements */; };
+		49483DCC1B6FF81000791ECF /* Installation.html in Resources */ = {isa = PBXBuildFile; fileRef = 49483DCA1B6FF81000791ECF /* Installation.html */; };
+		49483DCF1B6FF81F00791ECF /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 49483DCD1B6FF81F00791ECF /* Images */; };
 		49AA13771B6E9B3000FE404D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AA13761B6E9B3000FE404D /* AppDelegate.swift */; };
 		49AA13791B6E9B3000FE404D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AA13781B6E9B3000FE404D /* ViewController.swift */; };
 		49AA137B1B6E9B3000FE404D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49AA137A1B6E9B3000FE404D /* Images.xcassets */; };
@@ -49,6 +51,8 @@
 		4917292E1B6EB2EF0086ADB0 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Sparkle/Binary/Sparkle.framework; sourceTree = "<group>"; };
 		491D34801B6EA1BA0061C583 /* TerminalVelocityLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TerminalVelocityLauncher.h; sourceTree = "<group>"; };
 		49483DC81B6FCA8F00791ECF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		49483DCB1B6FF81000791ECF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = en.lproj/Installation.html; sourceTree = "<group>"; };
+		49483DCE1B6FF81F00791ECF /* Base */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Base; path = Base.lproj/Images; sourceTree = "<group>"; };
 		49AA13711B6E9B3000FE404D /* Terminal Velocity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Terminal Velocity.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49AA13751B6E9B3000FE404D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49AA13761B6E9B3000FE404D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +89,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49483DC91B6FF7EA00791ECF /* Installation */ = {
+			isa = PBXGroup;
+			children = (
+				49483DCA1B6FF81000791ECF /* Installation.html */,
+				49483DCD1B6FF81F00791ECF /* Images */,
+			);
+			name = Installation;
+			sourceTree = "<group>";
+		};
 		49AA13681B6E9B3000FE404D = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +125,7 @@
 				49AA137A1B6E9B3000FE404D /* Images.xcassets */,
 				49AA137C1B6E9B3000FE404D /* Main.storyboard */,
 				49AA13741B6E9B3000FE404D /* Supporting Files */,
+				49483DC91B6FF7EA00791ECF /* Installation */,
 			);
 			path = "Terminal Velocity";
 			sourceTree = "<group>";
@@ -247,9 +261,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49483DCC1B6FF81000791ECF /* Installation.html in Resources */,
 				49AA137B1B6E9B3000FE404D /* Images.xcassets in Resources */,
 				49AA137E1B6E9B3000FE404D /* Main.storyboard in Resources */,
 				49AA13AA1B6E9BD700FE404D /* Terminal Velocity Launcher.app in Resources */,
+				49483DCF1B6FF81F00791ECF /* Images in Resources */,
 				491D347E1B6E9F9E0061C583 /* Terminal Velocity.entitlements in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +311,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		49483DCA1B6FF81000791ECF /* Installation.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49483DCB1B6FF81000791ECF /* en */,
+			);
+			name = Installation.html;
+			sourceTree = "<group>";
+		};
+		49483DCD1B6FF81F00791ECF /* Images */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49483DCE1B6FF81F00791ECF /* Base */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		49AA137C1B6E9B3000FE404D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

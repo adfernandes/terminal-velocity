@@ -7,9 +7,9 @@
 -(NSArray *)getFinderSelections; // NSArray<NSString*>*
 
 -(void)launchTerminalWindowsFor:(NSArray *)directories; // NSArray<NSString*>*
--(void)launchTerminalTabsFor:(NSArray *)directories; // NSArray<NSString*>*
+-(void)launchTerminalTabsFor:(NSArray *)directories;    // NSArray<NSString*>*
 
--(void)launchITermWindowsFor:(NSArray *)directories; // NSArray<NSString*>*
--(void)launchITermTabsFor:(NSArray *)directories;    // NSArray<NSString*>*
+-(void)launchITerm2WindowsFor:(NSArray *)directories; // NSArray<NSString*>*
+-(void)launchITerm2TabsFor:(NSArray *)directories;    // NSArray<NSString*>*
 
 @end
