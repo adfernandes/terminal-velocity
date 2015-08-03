@@ -20,7 +20,7 @@ using namespace std;
 
 int main(int argc, const char * argv[]) {
 
-    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName: @"group.Y629ETSHLM.com.pharynks.terminalvelocity"];
+    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName: @"Y629ETSHLM.com.pharynks.terminalvelocity"];
 
     [[NSBundle mainBundle] loadAppleScriptObjectiveCScripts];
 

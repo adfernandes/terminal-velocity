@@ -14,22 +14,43 @@ class ViewController: NSViewController {
     @IBOutlet weak var radio: NSMatrix!
     @IBOutlet weak var useTabs: NSButton!
 
-    enum RadioButtonTag : Int {
+    enum Application : Int {
         case Terminal = 0
         case ITerm = 1
         case XTerm = 2
     }
 
-    let defaults = NSUserDefaults(suiteName: "group.Y629ETSHLM.com.pharynks.terminalvelocity")
-    let launcherPath = NSBundle.mainBundle().pathForResource("Terminal Velocity Launcher", ofType: "app")
+    enum Defaults : String {
+        case Application = "Application"
+        case PreferTabs  = "PreferTabs"
+    }
+
+    let defaults = NSUserDefaults(suiteName: "Y629ETSHLM.com.pharynks.terminalvelocity")!
+    let launcherPath = NSBundle.mainBundle().pathForResource("Terminal Velocity Launcher", ofType: "app")!
+    let resourcePath = NSBundle.mainBundle().resourcePath!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let buttonCell = radio.selectedCell() as! NSButtonCell
-        let tag = RadioButtonTag(rawValue: buttonCell.tag)
+        let dict = defaults.dictionaryRepresentation() as! [String:AnyObject]
 
-        // TODO: If there is no default, save the current tag and tab preference as the default.
+        if dict[Defaults.Application.rawValue] == nil {
+            defaults.setInteger(Application.Terminal.rawValue, forKey: Defaults.Application.rawValue)
+        }
+
+        if dict[Defaults.PreferTabs.rawValue] == nil {
+            defaults.setBool(true, forKey: Defaults.PreferTabs.rawValue)
+        }
+
+        var application = Application(rawValue: defaults.integerForKey(Defaults.Application.rawValue))
+
+        if application == nil {
+            application = Application.Terminal
+            defaults.setInteger(application!.rawValue, forKey: Defaults.Application.rawValue)
+        }
+
+        radio.selectCellWithTag(application!.rawValue)
+        useTabs.state = Int(defaults.boolForKey(Defaults.PreferTabs.rawValue))
 
     }
 
@@ -39,11 +60,6 @@ class ViewController: NSViewController {
 
     }
 
-    func updateXTermSupportMessage() {
-        let buttonCell = radio.selectedCell() as! NSButtonCell
-        let tag = RadioButtonTag(rawValue: buttonCell.tag)
-    }
-
     @IBAction func preference(sender: NSMatrix) {
 
         if sender != radio {
@@ -51,10 +67,10 @@ class ViewController: NSViewController {
         }
 
         let buttonCell = radio.selectedCell() as! NSButtonCell
-        let tag = RadioButtonTag(rawValue: buttonCell.tag)
+        let tag = Application(rawValue: buttonCell.tag)!
         useTabs.enabled = (tag != .XTerm)
 
-        println("preference: \(tag!.rawValue)") // TODO - also, add the 'xterm' option
+        println("preference: \(tag.rawValue)") // TODO - also, add the 'xterm' option
 
         // xterm -e "cd '/Applications' && pwd && bash -l"
         //
