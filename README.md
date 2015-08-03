@@ -1,6 +1,9 @@
 # Terminal Velocity
 
+
 TODO
+
+_(This is a work in progess... it doesn't quite work yet... but soon!)_
 
 ## License
 
