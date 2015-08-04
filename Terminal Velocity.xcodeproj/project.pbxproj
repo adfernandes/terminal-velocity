@@ -205,6 +205,8 @@
 				491729301B6EB3360086ADB0 /* CopyFiles */,
 				49483DD21B7019B800791ECF /* ShellScript */,
 				7B3099F1548F1AFE50A779D1 /* Copy Pods Resources */,
+				49EAF9971B70E17400293111 /* ShellScript */,
+				49EAF9991B70E1CE00293111 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -226,7 +228,7 @@
 				49AA13951B6E9B5A00FE404D /* Resources */,
 				49483DD31B7019E600791ECF /* ShellScript */,
 				605CB0183D206BE70E96096D /* Copy Pods Resources */,
-				496AE2F81B70DD680019E631 /* ShellScript */,
+				49EAF9981B70E19B00293111 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -338,7 +340,33 @@
 			shellPath = /bin/bash;
 			shellScript = "# Set the build number to the current git commit count.\n# If we're using the Dev scheme, then we'll suffix the build\n# number with the current branch name, to make collisions\n# far less likely across feature branches.\n#\n# Based on: http://w3facility.info/question/how-do-i-force-xcode-to-rebuild-the-info-plist-file-in-my-project-every-time-i-build-the-project/\n#\ngit=`sh /etc/profile; which git`\nappBuild=`\"$git\" rev-list --all | wc -l`\nif [ $CONFIGURATION = \"Debug\" ]; then\nbranchName=`\"$git\" rev-parse --abbrev-ref HEAD`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild-$branchName\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\nelse\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\nfi\necho \"Updated ${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"";
 		};
-		496AE2F81B70DD680019E631 /* ShellScript */ = {
+		49EAF9971B70E17400293111 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "LOCATION=\"${BUILT_PRODUCTS_DIR}\"/\"${FRAMEWORKS_FOLDER_PATH}\"\nIDENTITY=\"Developer ID Application\"\ncodesign --verbose --force --sign \"$IDENTITY\" \"$LOCATION/Sparkle.framework/Versions/A\"";
+		};
+		49EAF9981B70E19B00293111 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "LOCATION=\"${BUILT_PRODUCTS_DIR}\"/\"${FRAMEWORKS_FOLDER_PATH}\"\nIDENTITY=\"Developer ID Application\"\ncodesign --verbose --force --sign \"$IDENTITY\" \"$LOCATION/CrashReporter.framework/Versions/A\"";
+		};
+		49EAF9991B70E1CE00293111 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
