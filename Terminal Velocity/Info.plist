@@ -34,8 +34,16 @@ All rights reserved.</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 	<key>SUFeedURL</key>
-	<string>https://raw.githubusercontent.com/pharynks/terminal-velocity/master/Sparkle/AppCast.xml</string>
+	<string>https://pharynks.com/sparkle/terminal-velocity/AppCast.xml</string>
+	<key>SUEnableAutomaticChecks</key>
+	<true/>
 	<key>SUEnableSystemProfiling</key>
+	<true/>
+	<key>SUShowReleaseNotes</key>
+	<true/>
+	<key>SUScheduledCheckInterval</key>
+	<integer>86400</integer>
+	<key>SUAllowsAutomaticUpdates</key>
 	<true/>
 </dict>
 </plist>
