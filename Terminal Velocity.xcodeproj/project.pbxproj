@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4917292F1B6EB2EF0086ADB0 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4917292E1B6EB2EF0086ADB0 /* Sparkle.framework */; };
-		491729311B6EB3500086ADB0 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4917292E1B6EB2EF0086ADB0 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2E86EAC5B9B8A60499F41E47 /* libPods-TerminalVelocityLauncher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6A74FF7ED66331F9CFDED8C /* libPods-TerminalVelocityLauncher.a */; };
 		491D347E1B6E9F9E0061C583 /* Terminal Velocity.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 49AA13AD1B6E9C1300FE404D /* Terminal Velocity.entitlements */; };
 		491D347F1B6E9FA20061C583 /* Terminal Velocity Launcher.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 49AA13AE1B6E9D1400FE404D /* Terminal Velocity Launcher.entitlements */; };
 		49483DCC1B6FF81000791ECF /* Installation.html in Resources */ = {isa = PBXBuildFile; fileRef = 49483DCA1B6FF81000791ECF /* Installation.html */; };
@@ -23,6 +22,7 @@
 		49AA13A11B6E9B5A00FE404D /* TerminalVelocityLauncher.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 49AA13A01B6E9B5A00FE404D /* TerminalVelocityLauncher.applescript */; };
 		49AA13A31B6E9B5A00FE404D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49AA13A21B6E9B5A00FE404D /* Images.xcassets */; };
 		49AA13AA1B6E9BD700FE404D /* Terminal Velocity Launcher.app in Resources */ = {isa = PBXBuildFile; fileRef = 49AA13971B6E9B5A00FE404D /* Terminal Velocity Launcher.app */; };
+		ADD40AEF60A97033903FA5B1 /* libPods-TerminalVelocity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B264A163B11B5192A7CBF6 /* libPods-TerminalVelocity.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,14 +42,14 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				491729311B6EB3500086ADB0 /* Sparkle.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4917292E1B6EB2EF0086ADB0 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Sparkle/Binary/Sparkle.framework; sourceTree = "<group>"; };
+		00C3E65380E36B0371A3E3FA /* Pods-TerminalVelocityLauncher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TerminalVelocityLauncher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TerminalVelocityLauncher/Pods-TerminalVelocityLauncher.debug.xcconfig"; sourceTree = "<group>"; };
+		47646E1266FDB5786F645A37 /* Pods-TerminalVelocity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TerminalVelocity.release.xcconfig"; path = "Pods/Target Support Files/Pods-TerminalVelocity/Pods-TerminalVelocity.release.xcconfig"; sourceTree = "<group>"; };
 		491D34801B6EA1BA0061C583 /* TerminalVelocityLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TerminalVelocityLauncher.h; sourceTree = "<group>"; };
 		49483DC81B6FCA8F00791ECF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		49483DCB1B6FF81000791ECF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = en.lproj/Installation.html; sourceTree = "<group>"; };
@@ -69,6 +69,10 @@
 		49AA13A21B6E9B5A00FE404D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		49AA13AD1B6E9C1300FE404D /* Terminal Velocity.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Terminal Velocity.entitlements"; sourceTree = "<group>"; };
 		49AA13AE1B6E9D1400FE404D /* Terminal Velocity Launcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Terminal Velocity Launcher.entitlements"; sourceTree = "<group>"; };
+		A6A74FF7ED66331F9CFDED8C /* libPods-TerminalVelocityLauncher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TerminalVelocityLauncher.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB5E00970C02793E9AC935F6 /* Pods-TerminalVelocity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TerminalVelocity.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TerminalVelocity/Pods-TerminalVelocity.debug.xcconfig"; sourceTree = "<group>"; };
+		B9B264A163B11B5192A7CBF6 /* libPods-TerminalVelocity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TerminalVelocity.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF66434CBF8998D9D4C86E7D /* Pods-TerminalVelocityLauncher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TerminalVelocityLauncher.release.xcconfig"; path = "Pods/Target Support Files/Pods-TerminalVelocityLauncher/Pods-TerminalVelocityLauncher.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4917292F1B6EB2EF0086ADB0 /* Sparkle.framework in Frameworks */,
+				ADD40AEF60A97033903FA5B1 /* libPods-TerminalVelocity.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +90,7 @@
 			files = (
 				49483DD11B700A3500791ECF /* AppKit.framework in Frameworks */,
 				49AA139A1B6E9B5A00FE404D /* AppleScriptObjC.framework in Frameworks */,
+				2E86EAC5B9B8A60499F41E47 /* libPods-TerminalVelocityLauncher.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +112,7 @@
 				49AA13731B6E9B3000FE404D /* Terminal Velocity */,
 				49AA139B1B6E9B5A00FE404D /* Terminal Velocity Launcher */,
 				49AA13981B6E9B5A00FE404D /* Frameworks */,
+				8B96327A24D1736E2F37AF80 /* Pods */,
 				49AA13721B6E9B3000FE404D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -146,8 +152,9 @@
 			isa = PBXGroup;
 			children = (
 				49483DD01B700A3500791ECF /* AppKit.framework */,
-				4917292E1B6EB2EF0086ADB0 /* Sparkle.framework */,
 				49AA13991B6E9B5A00FE404D /* AppleScriptObjC.framework */,
+				B9B264A163B11B5192A7CBF6 /* libPods-TerminalVelocity.a */,
+				A6A74FF7ED66331F9CFDED8C /* libPods-TerminalVelocityLauncher.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -173,6 +180,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8B96327A24D1736E2F37AF80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB5E00970C02793E9AC935F6 /* Pods-TerminalVelocity.debug.xcconfig */,
+				47646E1266FDB5786F645A37 /* Pods-TerminalVelocity.release.xcconfig */,
+				00C3E65380E36B0371A3E3FA /* Pods-TerminalVelocityLauncher.debug.xcconfig */,
+				FF66434CBF8998D9D4C86E7D /* Pods-TerminalVelocityLauncher.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -180,11 +198,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49AA138D1B6E9B3000FE404D /* Build configuration list for PBXNativeTarget "Terminal Velocity" */;
 			buildPhases = (
+				A6754E59D7B3B2069D1F7E2C /* Check Pods Manifest.lock */,
 				49AA136D1B6E9B3000FE404D /* Sources */,
 				49AA136E1B6E9B3000FE404D /* Frameworks */,
 				49AA136F1B6E9B3000FE404D /* Resources */,
 				491729301B6EB3360086ADB0 /* CopyFiles */,
 				49483DD21B7019B800791ECF /* ShellScript */,
+				7B3099F1548F1AFE50A779D1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,10 +220,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49AA13A71B6E9B5A00FE404D /* Build configuration list for PBXNativeTarget "Terminal Velocity Launcher" */;
 			buildPhases = (
+				80807C8F584A87228732A015 /* Check Pods Manifest.lock */,
 				49AA13931B6E9B5A00FE404D /* Sources */,
 				49AA13941B6E9B5A00FE404D /* Frameworks */,
 				49AA13951B6E9B5A00FE404D /* Resources */,
 				49483DD31B7019E600791ECF /* ShellScript */,
+				605CB0183D206BE70E96096D /* Copy Pods Resources */,
+				496AE2F81B70DD680019E631 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -220,6 +243,7 @@
 		49AA13691B6E9B3000FE404D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Pharynks Corporation";
 				TargetAttributes = {
@@ -314,6 +338,79 @@
 			shellPath = /bin/bash;
 			shellScript = "# Set the build number to the current git commit count.\n# If we're using the Dev scheme, then we'll suffix the build\n# number with the current branch name, to make collisions\n# far less likely across feature branches.\n#\n# Based on: http://w3facility.info/question/how-do-i-force-xcode-to-rebuild-the-info-plist-file-in-my-project-every-time-i-build-the-project/\n#\ngit=`sh /etc/profile; which git`\nappBuild=`\"$git\" rev-list --all | wc -l`\nif [ $CONFIGURATION = \"Debug\" ]; then\nbranchName=`\"$git\" rev-parse --abbrev-ref HEAD`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild-$branchName\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\nelse\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $appBuild\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\nfi\necho \"Updated ${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"";
 		};
+		496AE2F81B70DD680019E631 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "LOCATION=\"${BUILT_PRODUCTS_DIR}\"/\"${FRAMEWORKS_FOLDER_PATH}\"\nIDENTITY=\"Developer ID Application\"\ncodesign --verbose --force --sign \"$IDENTITY\" \"$LOCATION/CrashReporter.framework/Versions/A\"";
+		};
+		605CB0183D206BE70E96096D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TerminalVelocityLauncher/Pods-TerminalVelocityLauncher-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B3099F1548F1AFE50A779D1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TerminalVelocity/Pods-TerminalVelocity-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80807C8F584A87228732A015 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A6754E59D7B3B2069D1F7E2C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -391,7 +488,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -435,7 +532,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -456,42 +553,37 @@
 		};
 		49AA138E1B6E9B3000FE404D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB5E00970C02793E9AC935F6 /* Pods-TerminalVelocity.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Terminal Velocity/Terminal Velocity.entitlements";
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Sparkle/Binary",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Terminal Velocity/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				OTHER_LDFLAGS = "-Wl,-rpath,@loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		49AA138F1B6E9B3000FE404D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47646E1266FDB5786F645A37 /* Pods-TerminalVelocity.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Terminal Velocity/Terminal Velocity.entitlements";
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Sparkle/Binary",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Terminal Velocity/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				OTHER_LDFLAGS = "-Wl,-rpath,@loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
 		49AA13A81B6E9B5A00FE404D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00C3E65380E36B0371A3E3FA /* Pods-TerminalVelocityLauncher.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Terminal Velocity Launcher/Terminal Velocity Launcher.entitlements";
@@ -510,6 +602,7 @@
 		};
 		49AA13A91B6E9B5A00FE404D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF66434CBF8998D9D4C86E7D /* Pods-TerminalVelocityLauncher.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Terminal Velocity Launcher/Terminal Velocity Launcher.entitlements";

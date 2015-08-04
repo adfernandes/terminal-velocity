@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C3540973897D85971A66D0B4340B1F3 /* Pods-TerminalVelocityLauncher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A12BCA2FB68CEB79BE55830B6AFFC8 /* Pods-TerminalVelocityLauncher-dummy.m */; };
+		5AB1B70BA5632E59B2BCFE26D41FCB7E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C8836800E7D60637283F6927AB2863 /* Cocoa.framework */; };
+		60B3E060111B731F9118016DDF051B3B /* Pods-TerminalVelocity-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BAB17178D599BA70A3B42B9E098AF09 /* Pods-TerminalVelocity-dummy.m */; };
+		E82423A1F0035E2D8FE60AEA617EF1D9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C8836800E7D60637283F6927AB2863 /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06A12BCA2FB68CEB79BE55830B6AFFC8 /* Pods-TerminalVelocityLauncher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TerminalVelocityLauncher-dummy.m"; sourceTree = "<group>"; };
+		0740DF7372330BC2E7C338192C539C32 /* Pods-TerminalVelocity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TerminalVelocity.debug.xcconfig"; sourceTree = "<group>"; };
+		0BAB17178D599BA70A3B42B9E098AF09 /* Pods-TerminalVelocity-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TerminalVelocity-dummy.m"; sourceTree = "<group>"; };
+		13C761A53C5CBDE91818BCE1F1AE45A2 /* Pods-TerminalVelocityLauncher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TerminalVelocityLauncher.debug.xcconfig"; sourceTree = "<group>"; };
+		325091548ED0F9D4FD97EB0167DED704 /* libPods-TerminalVelocityLauncher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TerminalVelocityLauncher.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BE2A5DE90AC1CA62851D3CC24F4DF80 /* Pods-TerminalVelocity-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TerminalVelocity-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4D252B6D793320AE489767B6C6528BBD /* Pods-TerminalVelocity-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TerminalVelocity-acknowledgements.plist"; sourceTree = "<group>"; };
+		60FC41437AE8360AB1CC2187F55D3A1D /* Pods-TerminalVelocityLauncher-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TerminalVelocityLauncher-resources.sh"; sourceTree = "<group>"; };
+		799068E8DDF313E05BD2F6F331996BF8 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		80C8836800E7D60637283F6927AB2863 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		88D736B59975EBAA7867EE262DC7FFE8 /* Pods-TerminalVelocity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TerminalVelocity.release.xcconfig"; sourceTree = "<group>"; };
+		9FD947B24DE181DC2476F3E81486A176 /* Pods-TerminalVelocityLauncher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TerminalVelocityLauncher.release.xcconfig"; sourceTree = "<group>"; };
+		AFCA2D29E19E40540693589E988B60A2 /* Pods-TerminalVelocity-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TerminalVelocity-resources.sh"; sourceTree = "<group>"; };
+		B2224B78A0FE561FF735124DB4D8C3B7 /* Pods-TerminalVelocityLauncher-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TerminalVelocityLauncher-acknowledgements.plist"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C927FE4E2F68558E04B694BF15FDD4CA /* libPods-TerminalVelocity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TerminalVelocity.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7FF196C522574AC1402D3AD0E5DA1E /* CrashReporter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CrashReporter.framework; path = "Mac OS X Framework/CrashReporter.framework"; sourceTree = "<group>"; };
+		DF2A9ECDDAF119130A1C1DF4FF9FF0A7 /* Pods-TerminalVelocityLauncher-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TerminalVelocityLauncher-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B08BD2AED8CAE0D79ACD75C78B62F8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E82423A1F0035E2D8FE60AEA617EF1D9 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE42263F498269F568ABED3E8A1971CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AB1B70BA5632E59B2BCFE26D41FCB7E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03AD1052B5B0994FBA49E57712A9B810 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2BCCF9E7DC08FAEC719B6A6C0F7D57AD /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				80C8836800E7D60637283F6927AB2863 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BCCF9E7DC08FAEC719B6A6C0F7D57AD /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */,
+				8268B8947948F64EBD93259D9055A19E /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				B60D8D82709854302B881CA5A4968E38 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8268B8947948F64EBD93259D9055A19E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE9B90692F532661B0F943B4E1750B4C /* PLCrashReporter */,
+				873A00D326DD76276DB022F1DA7DE8AA /* Sparkle */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		873A00D326DD76276DB022F1DA7DE8AA /* Sparkle */ = {
+			isa = PBXGroup;
+			children = (
+				E665C4823208EBB393F2D4FE38AF0D92 /* Frameworks */,
+				C5F374576B90036D074AA079130A8B5F /* Resources */,
+			);
+			path = Sparkle;
+			sourceTree = "<group>";
+		};
+		AE9B90692F532661B0F943B4E1750B4C /* PLCrashReporter */ = {
+			isa = PBXGroup;
+			children = (
+				F2203F4F7EE0998315B196F4093C6953 /* Frameworks */,
+				03AD1052B5B0994FBA49E57712A9B810 /* Resources */,
+			);
+			path = PLCrashReporter;
+			sourceTree = "<group>";
+		};
+		B60D8D82709854302B881CA5A4968E38 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEDF462D073F38A04E2EC28C1AE7927F /* Pods-TerminalVelocity */,
+				E101A4E5DEA04CF35C09B474B9D04BD0 /* Pods-TerminalVelocityLauncher */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BEDF462D073F38A04E2EC28C1AE7927F /* Pods-TerminalVelocity */ = {
+			isa = PBXGroup;
+			children = (
+				3BE2A5DE90AC1CA62851D3CC24F4DF80 /* Pods-TerminalVelocity-acknowledgements.markdown */,
+				4D252B6D793320AE489767B6C6528BBD /* Pods-TerminalVelocity-acknowledgements.plist */,
+				0BAB17178D599BA70A3B42B9E098AF09 /* Pods-TerminalVelocity-dummy.m */,
+				AFCA2D29E19E40540693589E988B60A2 /* Pods-TerminalVelocity-resources.sh */,
+				0740DF7372330BC2E7C338192C539C32 /* Pods-TerminalVelocity.debug.xcconfig */,
+				88D736B59975EBAA7867EE262DC7FFE8 /* Pods-TerminalVelocity.release.xcconfig */,
+			);
+			name = "Pods-TerminalVelocity";
+			path = "Target Support Files/Pods-TerminalVelocity";
+			sourceTree = "<group>";
+		};
+		C5F374576B90036D074AA079130A8B5F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C927FE4E2F68558E04B694BF15FDD4CA /* libPods-TerminalVelocity.a */,
+				325091548ED0F9D4FD97EB0167DED704 /* libPods-TerminalVelocityLauncher.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E101A4E5DEA04CF35C09B474B9D04BD0 /* Pods-TerminalVelocityLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				DF2A9ECDDAF119130A1C1DF4FF9FF0A7 /* Pods-TerminalVelocityLauncher-acknowledgements.markdown */,
+				B2224B78A0FE561FF735124DB4D8C3B7 /* Pods-TerminalVelocityLauncher-acknowledgements.plist */,
+				06A12BCA2FB68CEB79BE55830B6AFFC8 /* Pods-TerminalVelocityLauncher-dummy.m */,
+				60FC41437AE8360AB1CC2187F55D3A1D /* Pods-TerminalVelocityLauncher-resources.sh */,
+				13C761A53C5CBDE91818BCE1F1AE45A2 /* Pods-TerminalVelocityLauncher.debug.xcconfig */,
+				9FD947B24DE181DC2476F3E81486A176 /* Pods-TerminalVelocityLauncher.release.xcconfig */,
+			);
+			name = "Pods-TerminalVelocityLauncher";
+			path = "Target Support Files/Pods-TerminalVelocityLauncher";
+			sourceTree = "<group>";
+		};
+		E665C4823208EBB393F2D4FE38AF0D92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				799068E8DDF313E05BD2F6F331996BF8 /* Sparkle.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2203F4F7EE0998315B196F4093C6953 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE7FF196C522574AC1402D3AD0E5DA1E /* CrashReporter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		510F9D866B266B0E68593678E84AA70D /* Pods-TerminalVelocity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8346E546EC67E7A184673401684AB180 /* Build configuration list for PBXNativeTarget "Pods-TerminalVelocity" */;
+			buildPhases = (
+				263CE4227F6E1B5435E6DF0797920EA0 /* Sources */,
+				3B08BD2AED8CAE0D79ACD75C78B62F8D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TerminalVelocity";
+			productName = "Pods-TerminalVelocity";
+			productReference = C927FE4E2F68558E04B694BF15FDD4CA /* libPods-TerminalVelocity.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B2465A6A401975CBF28088F63F269E2C /* Pods-TerminalVelocityLauncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01D4904CEE84D953E59AE294D4D8E8CE /* Build configuration list for PBXNativeTarget "Pods-TerminalVelocityLauncher" */;
+			buildPhases = (
+				C13EEFA39473C7FFAE5963F06899FF5D /* Sources */,
+				FE42263F498269F568ABED3E8A1971CB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TerminalVelocityLauncher";
+			productName = "Pods-TerminalVelocityLauncher";
+			productReference = 325091548ED0F9D4FD97EB0167DED704 /* libPods-TerminalVelocityLauncher.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				510F9D866B266B0E68593678E84AA70D /* Pods-TerminalVelocity */,
+				B2465A6A401975CBF28088F63F269E2C /* Pods-TerminalVelocityLauncher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		263CE4227F6E1B5435E6DF0797920EA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60B3E060111B731F9118016DDF051B3B /* Pods-TerminalVelocity-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C13EEFA39473C7FFAE5963F06899FF5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C3540973897D85971A66D0B4340B1F3 /* Pods-TerminalVelocityLauncher-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		44BC4486FF74D68DB5A71AD6AE636BF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FD947B24DE181DC2476F3E81486A176 /* Pods-TerminalVelocityLauncher.release.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4E7EAB70BADF44A50F19F81CA2A9548F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0740DF7372330BC2E7C338192C539C32 /* Pods-TerminalVelocity.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		52D4ECB745D1C035F94BD060EE7F6605 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8EF29D85CED224CB74E29008DD3EE9F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88D736B59975EBAA7867EE262DC7FFE8 /* Pods-TerminalVelocity.release.xcconfig */;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9955F31413A5873284D7F88F9523E55D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13C761A53C5CBDE91818BCE1F1AE45A2 /* Pods-TerminalVelocityLauncher.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A070F153A04DD66F4E492261894B37FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01D4904CEE84D953E59AE294D4D8E8CE /* Build configuration list for PBXNativeTarget "Pods-TerminalVelocityLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9955F31413A5873284D7F88F9523E55D /* Debug */,
+				44BC4486FF74D68DB5A71AD6AE636BF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52D4ECB745D1C035F94BD060EE7F6605 /* Debug */,
+				A070F153A04DD66F4E492261894B37FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8346E546EC67E7A184673401684AB180 /* Build configuration list for PBXNativeTarget "Pods-TerminalVelocity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E7EAB70BADF44A50F19F81CA2A9548F /* Debug */,
+				8EF29D85CED224CB74E29008DD3EE9F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
