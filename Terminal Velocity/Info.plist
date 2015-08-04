@@ -34,6 +34,6 @@ All rights reserved.</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 	<key>SUFeedURL</key>
-	<string>https://raw.githubusercontent.com/adfernandes/terminal-velocity/master/Sparkle/Version/SampleAppcast.xml</string>
+	<string>https://raw.githubusercontent.com/pharynks/terminal-velocity/master/Sparkle/Version/SampleAppcast.xml</string>
 </dict>
 </plist>
