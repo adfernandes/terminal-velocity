@@ -2,6 +2,7 @@
 //  Copyright (c) 2015 Pharynks Corporation. All rights reserved.
 
 import Cocoa
+import Sparkle
 
 class ViewController: NSViewController {
 
@@ -13,6 +14,8 @@ class ViewController: NSViewController {
 
     @IBOutlet weak var radio: NSMatrix!
     @IBOutlet weak var useTabs: NSButton!
+
+    let updater = SUUpdater.sharedUpdater()
 
     let ApplicationPreferenceKey = "Application"
     let UseTabsPreferenceKey     = "PreferTabs"
