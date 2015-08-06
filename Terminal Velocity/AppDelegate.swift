@@ -23,7 +23,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, SUUpdaterDelegate {
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
 
-        let window = NSApplication.sharedApplication().windows.first! as! NSWindow
+        let window = NSApplication.sharedApplication().windows.last! as! NSWindow
 
         window.center()
         window.level = Int(CGWindowLevelForKey(Int32(kCGNormalWindowLevelKey))) // or kCGStatusWindowLevelKey, but this hides the 'about' dialog
