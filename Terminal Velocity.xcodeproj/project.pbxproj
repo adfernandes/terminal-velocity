@@ -13,6 +13,7 @@
 		49483DCC1B6FF81000791ECF /* Installation.html in Resources */ = {isa = PBXBuildFile; fileRef = 49483DCA1B6FF81000791ECF /* Installation.html */; };
 		49483DCF1B6FF81F00791ECF /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 49483DCD1B6FF81F00791ECF /* Images */; };
 		49483DD11B700A3500791ECF /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49483DD01B700A3500791ECF /* AppKit.framework */; };
+		494B77991B74342A004EAC26 /* Terminal Velocity Launcher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49AA13971B6E9B5A00FE404D /* Terminal Velocity Launcher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		49AA13771B6E9B3000FE404D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AA13761B6E9B3000FE404D /* AppDelegate.swift */; };
 		49AA13791B6E9B3000FE404D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AA13781B6E9B3000FE404D /* ViewController.swift */; };
 		49AA137B1B6E9B3000FE404D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49AA137A1B6E9B3000FE404D /* Images.xcassets */; };
@@ -21,7 +22,6 @@
 		49AA139F1B6E9B5A00FE404D /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 49AA139E1B6E9B5A00FE404D /* main.mm */; };
 		49AA13A11B6E9B5A00FE404D /* TerminalVelocityLauncher.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 49AA13A01B6E9B5A00FE404D /* TerminalVelocityLauncher.applescript */; };
 		49AA13A31B6E9B5A00FE404D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49AA13A21B6E9B5A00FE404D /* Images.xcassets */; };
-		49AA13AA1B6E9BD700FE404D /* Terminal Velocity Launcher.app in Resources */ = {isa = PBXBuildFile; fileRef = 49AA13971B6E9B5A00FE404D /* Terminal Velocity Launcher.app */; };
 		ADD40AEF60A97033903FA5B1 /* libPods-TerminalVelocity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B264A163B11B5192A7CBF6 /* libPods-TerminalVelocity.a */; };
 /* End PBXBuildFile section */
 
@@ -39,9 +39,10 @@
 		491729301B6EB3360086ADB0 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
+			dstPath = Launcher;
+			dstSubfolderSpec = 7;
 			files = (
+				494B77991B74342A004EAC26 /* Terminal Velocity Launcher.app in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +297,6 @@
 				49483DCC1B6FF81000791ECF /* Installation.html in Resources */,
 				49AA137B1B6E9B3000FE404D /* Images.xcassets in Resources */,
 				49AA137E1B6E9B3000FE404D /* Main.storyboard in Resources */,
-				49AA13AA1B6E9BD700FE404D /* Terminal Velocity Launcher.app in Resources */,
 				49483DCF1B6FF81F00791ECF /* Images in Resources */,
 				491D347E1B6E9F9E0061C583 /* Terminal Velocity.entitlements in Resources */,
 			);
