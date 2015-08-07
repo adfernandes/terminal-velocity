@@ -25,7 +25,7 @@ class ViewController: NSViewController {
 
     let defaults = NSUserDefaults(suiteName: "Y629ETSHLM.com.pharynks.terminalvelocity")!
     let instructPath = NSBundle.mainBundle().pathForResource("Installation", ofType: "html")!
-    let launcherPath = NSBundle.mainBundle().pathForResource("Terminal Velocity Launcher", ofType: "app")!
+    let launcherPath = NSBundle.mainBundle().pathForResource("Terminal Velocity Launcher", ofType: "app", inDirectory: "Launcher")!
     let resourcePath = NSBundle.mainBundle().resourcePath!
 
     override func viewDidLoad() {
