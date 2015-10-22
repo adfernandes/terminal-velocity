@@ -9,7 +9,7 @@
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
-	<string>com.pharynks.$(PRODUCT_NAME:rfc1034identifier)</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -33,17 +33,17 @@ All rights reserved.</string>
 	<string>Main</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
-	<key>SUFeedURL</key>
-	<string>https://pharynks.com/sparkle/terminal-velocity/AppCast.xml</string>
+	<key>SUAllowsAutomaticUpdates</key>
+	<true/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUEnableSystemProfiling</key>
 	<true/>
-	<key>SUShowReleaseNotes</key>
-	<true/>
+	<key>SUFeedURL</key>
+	<string>https://pharynks.com/sparkle/terminal-velocity/AppCast.xml</string>
 	<key>SUScheduledCheckInterval</key>
 	<integer>86400</integer>
-	<key>SUAllowsAutomaticUpdates</key>
+	<key>SUShowReleaseNotes</key>
 	<true/>
 </dict>
 </plist>

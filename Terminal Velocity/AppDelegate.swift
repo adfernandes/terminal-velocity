@@ -12,21 +12,21 @@ class AppDelegate: NSObject, NSApplicationDelegate, SUUpdaterDelegate {
 
     func applicationWillFinishLaunching(notification: NSNotification) {
 
-        arguments = NSProcessInfo.processInfo().arguments as! [String]
-        println("arguments: \(arguments)")
+        arguments = NSProcessInfo.processInfo().arguments 
+        print("arguments: \(arguments)")
 
         updater = SUUpdater.sharedUpdater()
-        println("lastUpdateCheckDate: \(updater.lastUpdateCheckDate)")
+        print("lastUpdateCheckDate: \(updater.lastUpdateCheckDate)")
         updater.delegate = self
 
     }
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
 
-        let window = NSApplication.sharedApplication().windows.last! as! NSWindow
+        let window = NSApplication.sharedApplication().windows.last! 
 
         window.center()
-        window.level = Int(CGWindowLevelForKey(Int32(kCGNormalWindowLevelKey))) // or kCGStatusWindowLevelKey, but this hides the 'about' dialog
+        window.level = Int(CGWindowLevelForKey(.NormalWindowLevelKey)) // or .StatusWindowLevelKey, but this hides the 'about' dialog
         window.makeKeyAndOrderFront(nil)
         // TODO // window.orderOut(nil)
 

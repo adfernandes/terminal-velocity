@@ -33,7 +33,7 @@ class ViewController: NSViewController {
 
         defaults.synchronize()
 
-        let prefs = defaults.dictionaryRepresentation() as! [String:AnyObject]
+        let prefs = defaults.dictionaryRepresentation() 
 
         if prefs[ApplicationPreferenceKey] == nil {
             defaults.setObject(ApplicationForButtonTag[0]! as NSString, forKey: ApplicationPreferenceKey)
@@ -66,6 +66,12 @@ class ViewController: NSViewController {
 
     @IBAction func install(sender: NSButton) {
 
+// FIXME
+updater.checkForUpdates(nil)
+let window = NSApplication.sharedApplication().windows.last! 
+window.orderOut(nil)
+return
+
         let workspace = NSWorkspace.sharedWorkspace()
 
         workspace.openFile(instructPath)
@@ -73,7 +79,7 @@ class ViewController: NSViewController {
         let when = dispatch_time(DISPATCH_TIME_NOW, Int64(3 * NSEC_PER_SEC))
         dispatch_after(when, dispatch_get_main_queue()) {
 
-            workspace.selectFile(launcherPath, inFileViewerRootedAtPath: resourcePath)
+            workspace.selectFile(self.launcherPath, inFileViewerRootedAtPath: self.resourcePath)
 
         }
 

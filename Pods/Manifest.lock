@@ -1,13 +1,13 @@
 PODS:
   - PLCrashReporter (1.2.0)
-  - Sparkle (1.10.0)
+  - Sparkle (1.11.0)
 
 DEPENDENCIES:
   - PLCrashReporter (~> 1.2)
-  - Sparkle (~> 1.0)
+  - Sparkle (~> 1.11)
 
 SPEC CHECKSUMS:
   PLCrashReporter: 16927d86a093d0b9cf110545dacb77cb0ed0f243
-  Sparkle: c859bf5283b9f12aa45bceccf8e25ebb4c008eb2
+  Sparkle: cf10103ef35fd89caa35373bfd772c5d6f9c7d73
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0
